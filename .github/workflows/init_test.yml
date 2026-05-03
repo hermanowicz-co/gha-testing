@@ -1,7 +1,9 @@
 ---
 name: "blacksmith-2vcpu"
 
-on: push
+on:
+  - push
+  - workflow_dispatch
 
 jobs:
   blacksmith-runners:
