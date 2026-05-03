@@ -27,11 +27,12 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-      - run: echo "🍏 This job's status is ${{ job.status }}."
+          echo "🍏 This job's status is ${{ job.status }}."
+
       - name: Setup python
         uses: actions/setup-python@v6
         with:
-          python-version: "3.13"
+          python-version: "3.14"
 
       - name: Exec python scrit
         run: python main.py
